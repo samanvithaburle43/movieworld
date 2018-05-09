@@ -1,0 +1,81 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Upload Here</h3>
+    </div>
+    <div class="panel-body" style="font-weight: 800; color: black; background-image:url(https://img.clipartxtras.com/b988d9ec2262e34e8aaa561ea11d2307_film-strip-thin-clip-art-at-clkercom-vector-clip-art-online-camera-film-roll-clipart_1122-907.svg); background-repeat: no-repeat; background-size:cover;align:center"> 
+
+    <div class="panel-body" >
+        <div class="row">
+            <div class="col-md-12">
+                <form ng-submit="addmovie()">
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" class="form-control" ng-model="movie.name" placeholder="Movie Name" required>
+                    </div>
+     
+                    
+           
+        <div class="form-group">
+          <label>Rating</label >
+          <input type="radio" name="rating" ng-model="movie.rating" value="5" checked >5
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="radio" name="rating" ng-model="movie.rating" value="4" >4
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="radio" name="rating" ng-model="movie.rating" value="3" >3
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="radio" name="rating" ng-model="movie.rating" value="2" >2
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="radio" name="rating" ng-model="movie.rating" value="1" >1
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       
+        </div>
+
+
+                    <div class="form-group">
+                        <label>Language</label>
+                        <select ng-model="movie.lang" class="form-control" required>
+            <option value="">select your option</option>
+            <option value="telugu">Telugu</option>
+            <option value="hindi">Hindi</option>
+            <option value="english">English</option>
+            <option value="tamil">Tamil</option>
+            <option value="malayalam">Malayalam</option>
+          </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Genre</label>
+                        <select ng-model="movie.genre" class="form-control" required>
+            <option value="">select your option</option>
+            <option value="romance">Romance</option>
+            <option value="drama">Drama</option>
+            <option value="thriller">Thriller</option>
+            <option value="action">Action</option>
+            <option value="biography">Biography</option>
+            <option value="comedy">Comedy</option>
+          </select>
+                    </div>
+
+
+
+                    <div class="form-group">
+                        <label>Movie Image</label>
+                        <input type="text" class="form-control" ng-model="movie.pic" placeholder="Movie Image" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Movie URL</label>
+                    <input type="text" class="form-control" ng-model="movie.url" placeholder="Movie URL" required>
+                    </div>
+                    <center><button type="submit" style="color:red;" class="btn btn-default">Submit</button>
+                        <a href="#/movies" class="btn btn-default" style="color:red"> Cancel</a></center>
+                    <!--<button target="#/movies" type="submit" class="btn btn-default">Submit</button>
+
+                    <div class="pull-right">
+                        <a href="#/movies">Go Back</a>
+                    </div>-->
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

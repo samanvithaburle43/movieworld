@@ -1,0 +1,27 @@
+<div class="panel panel-default" ng-init="getmovies()">
+  <div class="panel-heading" style="background-image:none;background: Gray">
+    <h3 class="panel-title" >Movies</h3>
+  </div>
+    
+   <div class="panel-body" style="font-weight: 800; color: black; background-image:url(https://img.clipartxtras.com/b988d9ec2262e34e8aaa561ea11d2307_film-strip-thin-clip-art-at-clkercom-vector-clip-art-online-camera-film-roll-clipart_1122-907.svg); background-repeat: no-repeat; background-size:cover;align:center"> 
+
+
+  <div class="panel-body"  style="background:transparent">
+    <div class="row">
+    	<div ng-repeat="movie in movies"> 
+    		<div class="col-md-6">
+    			<div class="col-md-6">
+                    <h2 style="color:red; font-size: 28px "><b>{{movie.name}}</b></h2>
+    				<p style="color:red;font-size: 22px">Rating:{{movie.rating}}</p>
+                    <p style="color:red;font-size: 22px">Language:{{movie.lang}}</p>
+    				<a class="btn btn-primary" href="#/movies/details/{{movie._id}}">View Details</a>
+    			</div>
+    			<div class="col-md-6">
+    				<img class="thumbnail" src="{{movie.pic}}" height="140" width="20">
+    			</div>
+    		</div>
+    </div>
+  </div>
+      
+    </div>
+</div>
